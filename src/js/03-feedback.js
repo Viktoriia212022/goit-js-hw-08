@@ -30,7 +30,7 @@ function onFormSubmit(evt) {
 
 function populateText() {
     const savedMessage = localStorage.getItem(STORAGE_KEY);
-    console.log(savedMessage)
+    // console.log(savedMessage)
     if (savedMessage) {
         console.log(savedMessage);
         textArea.value = savedMessage.email;
