@@ -30,13 +30,11 @@ function onFormSubmit(evt) {
 
 function populateText() {
     const savedMessage = localStorage.getItem(STORAGE_KEY);
-    // console.log(savedMessage)
+    // console.log(savedMessage);
     if (savedMessage) {
-        console.log(savedMessage);
-        textArea.value = savedMessage.email;
-        email.value = savedMessage.message;
-         email.value = JSON.parse(savedMessage).email ;
-        textArea.value = JSON.parse(savedMessage).message;
+      email.value = JSON.parse(savedMessage).email ;
+      textArea.value = JSON.parse(savedMessage).message;
+      console.log(savedMessage);
        }
 }
 
