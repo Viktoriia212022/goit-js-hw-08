@@ -43,14 +43,6 @@ function populateText() {
 
 
 
-// function onTextareaInput(evt) {
-//   let fg = JSON.parse(localStorage.getItem(STORAGE_KEY));
-// ось тут витягаю дані
-//   formData = { ...fg, [evt.target.name]: evt.target.value };
-// дістаю їх
-//   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-// і записую
-// }
 
 
 
