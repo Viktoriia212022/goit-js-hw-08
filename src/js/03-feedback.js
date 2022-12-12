@@ -17,7 +17,7 @@ form.addEventListener('input', throttle (onFormInput, 500));
 function onFormInput(e) {
 
   formData[e.target.name] = e.target.value;
-  console.log(formData);
+  // console.log(formData);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 };
 
@@ -32,8 +32,8 @@ function populateText() {
     const savedMessage = localStorage.getItem(STORAGE_KEY);
     // console.log(savedMessage);
     if (savedMessage) {
-      email.value = JSON.parse(savedMessage).email ;
-      textArea.value = JSON.parse(savedMessage).message;
+      email.value = JSON.parse(savedMessage).email || '' ;
+      textArea.value = JSON.parse(savedMessage).message|| '';
       console.log(savedMessage);
        }
 }
